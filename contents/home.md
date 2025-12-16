@@ -1,20 +1,17 @@
-[![XX](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/XX)
+[![Shiyu Liu](https://img.shields.io/badge/Shiyu%20Liu-github-blue?logo=github)](https://github.com/liushiyu)
 
-I'm currently pursuing a Master's degree in XX at the Department of XX, XX University, XX.
+I am currently a senior undergraduate student majoring in Digital Media Technology at Jiangxi Agricultural University.  
+I have been recommended for postgraduate study at Shenzhen University and am honored to receive guidance from Prof. Qihua Zhou at the PEILab, School of Computer Science and Software Engineering, Shenzhen University.
 
 #### Email  
-<code>XX@XX.XX</code>  
-<code>XX@XX.XX</code>
+<code>shiyuliu2025@qq.com</code>  
 
 #### Education  
-**XX University**, Master of XX (XX – XX)  
-• GPA: XX/XX  
+**Jiangxi Agricultural University**, Bachelor of Digital Media Technology (2022 – Present)  
+• GPA: 88.64 / 100 (Top 2.3%)  
 
-**XX University**, Exchange student <br>  
-• As a XX, represented my college as an outstanding student for a XX exchange program.  
-
-**XX University**, Honours Bachelor of XX (XX – XX)  
-• GPA: XX/XX (top XX%)  
+**Shenzhen University**, Recommended Postgraduate Student  
+School of Computer Science and Software Engineering  
 
 #### Research Interests  
-XX, XX, XX, XX.
+Machine Learning, Edge AI Systems, and Tiny Machine Learning (TinyML).
