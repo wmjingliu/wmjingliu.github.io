@@ -1,7 +1,8 @@
-const content_dir = 'contents/'
-const config_file = 'config.yml'
-const section_names = ['home', 'awards', 'experience', 'publications'];
+const content_dir = 'contents/';
+const config_file = 'config.yml';
 
+// ✅ 把 education 加进来
+const section_names = ['home', 'education', 'awards', 'experience', 'publications'];
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -12,7 +13,7 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#mainNav',
             offset: 74,
         });
-    };
+    }
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -27,8 +28,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-
-    // Yaml
+    // Load YAML config
     fetch(content_dir + config_file)
         .then(response => response.text())
         .then(text => {
@@ -37,27 +37,26 @@ window.addEventListener('DOMContentLoaded', event => {
                 try {
                     document.getElementById(key).innerHTML = yml[key];
                 } catch {
-                    console.log("Unknown id and value: " + key + "," + yml[key].toString())
+                    console.log("Unknown id and value: " + key + "," + yml[key]);
                 }
-
-            })
+            });
         })
         .catch(error => console.log(error));
 
+    // Load Markdown sections
+    marked.use({ mangle: false, headerIds: false });
 
-    // Marked
-    marked.use({ mangle: false, headerIds: false })
-    section_names.forEach((name, idx) => {
+    section_names.forEach(name => {
         fetch(content_dir + name + '.md')
             .then(response => response.text())
             .then(markdown => {
                 const html = marked.parse(markdown);
                 document.getElementById(name + '-md').innerHTML = html;
-            }).then(() => {
-                // MathJax
+            })
+            .then(() => {
                 MathJax.typeset();
             })
             .catch(error => console.log(error));
-    })
+    });
 
-}); 
+});
